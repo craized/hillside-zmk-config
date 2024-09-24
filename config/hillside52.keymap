@@ -48,15 +48,15 @@
 /* NAV
  * -------------------------------------------------------------------------------------------------------------------------------------
  * | ESC   |   1   |   2   |   3   |   4   |   5   |-----------------------------------|   6   |   7   |   8   |   9   |   0   | BSPC  |
- * | INS   |  GUI  |  Alt  | Ctrl  | Shift | Paste |-----------------------------------| PG UP |  Left |  Up   |  Down | Right | PG DN |
+ * | INS   |  GUI  |  Alt  | Ctrl  | Shift | Paste |-----------------------------------|  Left |  Down |  Up   | Right | PG UP | PG DN |
  * | Shift |  F1   |  F2   |  F3   |  F4   |  F5   |  UnDo |-------------------| ReDo  |  F6   |  F7   |  F8   |  F9   |  F10  | Shift |
- * | F11   |  F12  |       |-------|       | Ctrl  |       |       |---| ADJ_L |       |       |       |-------| CTRL  | HOME  |  END  |
+ * | F11   |  F12  |       |-------|       | Ctrl  |       |       |---| ADJ_L |   /   |   '   |       |-------| CTRL  | HOME  |  END  |
  */
                         bindings = <
 &kp  ESC      &kp  N1       &kp  N2       &kp  N3       &kp  N4       &kp  N5                                                                        &kp   N6      &kp  N7      &kp   N8      &kp   N9      &kp  N0       &trans
-&kp  INS      &kp  LGUI     &kp  LALT     &kp LCTRL     &kp  LSHFT    &kp  Paste                                                                     &kp   PG_UP   &kp  LEFT    &kp   UP      &kp   DOWN    &kp  RIGHT    &kp PG_DN
+&kp  INS      &kp  LGUI     &kp  LALT     &kp LCTRL     &kp  LSHFT    &kp  Paste                                                                     &kp   LEFT    &kp  DOWN    &kp   UP      &kp   RIGHT   &kp  PG UP    &kp PG_DN
 &trans        &kp  F1       &kp  F2       &kp  F3       &kp  F4       &kp  F5       &kp Undo                                           &kp  Redo     &kp   F6      &kp  F7      &kp   F8      &kp   F9      &kp  F10      &trans
-&kp  F11      &kp  F12      &trans        &trans        &kp  LCTRL    &trans        &trans                 &mo ADJ_L     &trans        &trans        &trans                     &kp  RCTRL    &kp  HOME     &kp  END
+&kp  F11      &kp  F12      &trans        &trans        &kp  LCTRL    &trans        &trans                 &mo ADJ_L     &kp SLASH     &kp SQT;       &trans                     &kp  RCTRL    &kp  HOME     &kp  END
                         >;
 			
                         sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
